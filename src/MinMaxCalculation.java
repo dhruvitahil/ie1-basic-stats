@@ -2,7 +2,7 @@ import java.util.*;
   
 public class MinMaxCalculation {
   
-    public static Integer findMin(List<Integer> list)
+    public static Integer findMinNum(List<Integer> list)
     {
   
         if (list == null || list.size() == 0) {
@@ -13,7 +13,7 @@ public class MinMaxCalculation {
         return sortedlist.get(0);
     }
   
-    public static Integer findMax(List<Integer> list)
+    public static Integer findMaxNum(List<Integer> list)
     {
         if (list == null || list.size() == 0) {
             return Integer.MIN_VALUE;
@@ -30,7 +30,7 @@ public class MinMaxCalculation {
         list.add(11);
         list.add(22);
         list.add(33);
-        System.out.println("Min: " + findMin(list));
-        System.out.println("Max: " + findMax(list));
+        System.out.println("Minimum Value: " + findMinNum(list));
+        System.out.println("Maximum Value: " + findMaxNum(list));
     }
 }
